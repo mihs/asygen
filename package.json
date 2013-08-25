@@ -1,0 +1,17 @@
+{
+  "name": "asygen",
+  "description": "Making node callback style functions work with generators.",
+  "url": "https://github.com/mihs/asygen",
+  "author": "Mihnea Scafes <mihnea@nagemus.com>",
+  "contributors": [],
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">0.11.5",
+    "npm": "1.3.x"
+  },
+  "main": "index.js"
+}
