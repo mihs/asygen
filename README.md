@@ -15,9 +15,9 @@ Experimental
 ## Examples
 
 ```js
-var gen = require('gen');
-var parallel = gen.parallel;
-var async = gen.async;
+var asygen = require('asygen');
+var all = asygen.all;
+var async = asygen.async;
 
 function step(value, callback) {
   setTimeout(function() {
@@ -40,7 +40,7 @@ async(function*() {
 
 ```js
 async(function*(){
-  var [one, two] = yield gen.parallel(step.sync(1), step.sync(2));
+  var [one, two] = yield all(step.sync(1), step.sync(2));
   console.log(one, two); // 1, 2
 });
 ```
